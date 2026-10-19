@@ -1,0 +1,7 @@
+# Keep SMTP credentials off GitHub (form needs PHP hosting, not Pages)
+send.php
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
