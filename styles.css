@@ -433,7 +433,9 @@ header.scrolled .mobile-menu span {
 }
 
 .hero-location { 
-    display: inline-flex; 
+    display: flex; 
+    width: fit-content;
+    max-width: 100%;
     align-items: center; 
     gap: 8px; 
     font-size: 14px; 
@@ -441,7 +443,7 @@ header.scrolled .mobile-menu span {
     letter-spacing: 3px; 
     text-transform: uppercase; 
     color: #fff; 
-    margin-bottom: 35px; 
+    margin: 0 auto 20px; 
     animation: fadeInUp 1s ease 0.8s both; 
     background: rgba(0,0,0,0.55);
     border: 1px solid rgba(214,144,76,0.55); 
@@ -464,7 +466,7 @@ header.scrolled .mobile-menu span {
 }
 
 .hero-price { 
-    display: inline-block; 
+    display: block; 
     width: fit-content;
     max-width: 100%;
     font-size: 22px; 
