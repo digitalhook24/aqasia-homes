@@ -95,7 +95,17 @@ nav ul li a {
     text-transform: uppercase; 
     transition: all 0.3s ease; 
     letter-spacing: 1px; 
-    position: relative;\n    animation: fadeInDown 0.6s ease forwards;\n}\n\nnav ul li:nth-child(1) a { animation-delay: 0.1s; }\nnav ul li:nth-child(2) a { animation-delay: 0.2s; }\nnav ul li:nth-child(3) a { animation-delay: 0.3s; }\nnav ul li:nth-child(4) a { animation-delay: 0.4s; }\nnav ul li:nth-child(5) a { animation-delay: 0.5s; }\nnav ul li:nth-child(6) a { animation-delay: 0.6s; }\nnav ul li:nth-child(7) a { animation-delay: 0.7s; }\nnav ul li:nth-child(8) a { animation-delay: 0.8s; }
+    position: relative;
+    animation: fadeInDown 0.6s ease forwards;
+}
+\nnav ul li:nth-child(1) a { animation-delay: 0.1s; }
+nav ul li:nth-child(2) a { animation-delay: 0.2s; }
+nav ul li:nth-child(3) a { animation-delay: 0.3s; }
+nav ul li:nth-child(4) a { animation-delay: 0.4s; }
+nav ul li:nth-child(5) a { animation-delay: 0.5s; }
+nav ul li:nth-child(6) a { animation-delay: 0.6s; }
+nav ul li:nth-child(7) a { animation-delay: 0.7s; }
+nav ul li:nth-child(8) a { animation-delay: 0.8s; }
 
 nav ul li a::after { 
     content: ''; 
@@ -106,11 +116,13 @@ nav ul li a::after {
     height: 2px; 
     background: linear-gradient(90deg, #d6904c, #e8ad73); 
     transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-    box-shadow: 0 0 10px rgba(214,144,76,0.3);\n}
+    box-shadow: 0 0 10px rgba(214,144,76,0.3);
+}
 
 nav ul li a:hover::after { 
     width: 100%; 
-    box-shadow: 0 0 20px rgba(214,144,76,0.5);\n}
+    box-shadow: 0 0 20px rgba(214,144,76,0.5);
+}
 
 nav ul li a:hover { 
     color: #d6904c;
@@ -452,17 +464,21 @@ header.scrolled .mobile-menu span {
 }
 
 .hero-price { 
-    display: block; 
+    display: inline-block; 
+    width: fit-content;
+    max-width: 100%;
     font-size: 22px; 
     font-weight: 700; 
     color: #fff; 
-    margin-bottom: 35px; 
+    margin: 0 auto 35px; 
     animation: fadeInUp 1s ease 0.95s both; 
     letter-spacing: 1px; 
     background: linear-gradient(135deg, rgba(214,144,76,0.95), rgba(184,115,58,0.95)); 
-    padding: 14px 40px; 
+    padding: 12px 22px; 
     border-radius: 4px; 
-    box-shadow: 0 4px 30px rgba(214,144,76,0.5);\n    text-shadow: 0 1px 4px rgba(0,0,0,0.2);\n}
+    box-shadow: 0 4px 30px rgba(214,144,76,0.5);
+    text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
 
 .hero-price span { 
     font-size: 14px; 
@@ -493,7 +509,9 @@ header.scrolled .mobile-menu span {
     transition: all 0.4s ease; 
     font-family: 'Poppins', sans-serif; 
     position: relative; 
-    overflow: hidden;\n    animation: fadeInUp 0.8s ease 0.6s both;\n}
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease 0.6s both;
+}
 
 .cta-primary::before { 
     content: ''; 
@@ -531,7 +549,11 @@ header.scrolled .mobile-menu span {
 
 .cta-secondary:hover { 
     border-color: #d6904c; 
-    color: #d6904c;\n    background: rgba(214,144,76,0.1);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 30px rgba(214,144,76,0.25);\n}
+    color: #d6904c;
+    background: rgba(214,144,76,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(214,144,76,0.25);
+}
 
 .hero-stats { 
     display: flex; 
@@ -718,7 +740,20 @@ header.scrolled .mobile-menu span {
     font-weight: 600; 
     color: #2b2a29; 
     margin-bottom: 20px;
-    position: relative;\n    display: inline-block;\n    padding-bottom: 15px;\n}\n\n.section-title h3::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 80px;\n    height: 3px;\n    background: linear-gradient(90deg, transparent, #d6904c, transparent);\n    animation: slideInRight 1s ease 0.3s both;\n}
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+\n.section-title h3::after {\n    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #d6904c, transparent);
+    animation: slideInRight 1s ease 0.3s both;
+}
 
 .form-group { 
     margin-bottom: 15px; 
@@ -1446,11 +1481,26 @@ footer {
     text-transform: uppercase; 
     font-size: 12px; 
     letter-spacing: 1.5px; 
-    font-family: 'Poppins', sans-serif;\n    animation: bounce 2s infinite;\n    position: relative;\n    overflow: hidden;\n}\n\n.fixed-btn::before {\n    content: '';\n    position: absolute;\n    inset: 0;\n    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);\n    transform: translateX(-100%);\n    transition: transform 0.6s;\n}\n\n.fixed-btn:hover::before {\n    transform: translateX(100%);\n}
+    font-family: 'Poppins', sans-serif;
+    animation: bounce 2s infinite;
+    position: relative;
+    overflow: hidden;
+}
+\n.fixed-btn::before {\n    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+\n.fixed-btn:hover::before {\n    transform: translateX(100%);
+}
 
 .fixed-btn:hover { 
     background: #b8733a; 
-    transform: translateY(-4px) scale(1.08);\n    box-shadow: 0 12px 40px rgba(214,144,76,0.6); \n    animation: none;\n}
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 12px 40px rgba(214,144,76,0.6); \n    animation: none;
+}
 
 /* Responsive */
 @media (max-width: 968px) {
