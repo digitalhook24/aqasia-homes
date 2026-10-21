@@ -5,3 +5,6 @@ send.php
 *.log
 .DS_Store
 Thumbs.db
+
+# Duplicate hero video with spaces in filename (use Hero-BG.MP4)
+images/hero-section background.MP4
