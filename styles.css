@@ -1073,6 +1073,22 @@ header.scrolled .mobile-menu span {
     margin-bottom: 30px;
 }
 
+.about-content .footer-phone {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.about-content .footer-phone a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-content .footer-phone a:hover {
+    color: #d6904c;
+}
+
 .about-content .footer-contact-links {
     font-size: 22px;
     font-weight: 600;
