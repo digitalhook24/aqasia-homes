@@ -465,21 +465,22 @@ header.scrolled .mobile-menu span {
     animation: fadeInUp 1s ease 0.9s both; 
 }
 
-.hero-price { 
-    display: block; 
+.hero-price {
+    display: block;
     width: fit-content;
     max-width: 100%;
-    font-size: 22px; 
-    font-weight: 700; 
-    color: #fff; 
-    margin: 0 auto 35px; 
-    animation: fadeInUp 1s ease 0.95s both; 
-    letter-spacing: 1px; 
-    background: linear-gradient(135deg, rgba(214,144,76,0.95), rgba(184,115,58,0.95)); 
-    padding: 12px 22px; 
-    border-radius: 4px; 
-    box-shadow: 0 4px 30px rgba(214,144,76,0.5);
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 auto 35px;
+    animation: fadeInUp 1s ease 0.95s both;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, rgba(214,144,76,0.95), rgba(184,115,58,0.95));
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(214,144,76,0.35);
     text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    line-height: 1.2;
 }
 
 .hero-price span { 
@@ -1621,10 +1622,9 @@ footer {
         display: none; 
     }
     .hero-price {
-  
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    padding: 12px 17px;
+    padding: 6px 12px;
     }
       
       .hero-content{
