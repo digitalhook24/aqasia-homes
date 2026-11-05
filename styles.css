@@ -1066,11 +1066,28 @@ header.scrolled .mobile-menu span {
     margin-bottom: 20px; 
 }
 
-.about-content p { 
-    font-size: 16px; 
-    line-height: 1.8; 
-    color: #ffffff; 
-    margin-bottom: 30px; 
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.about-content .footer-contact-links {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.about-content .footer-contact-links a {
+    color: #d6904c;
+    text-decoration: none;
+}
+
+.about-content .footer-contact-links a:hover {
+    color: #e8ad73;
+    text-decoration: underline;
 }
 
 .partners-grid { 
