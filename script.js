@@ -4,6 +4,37 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 80);
 });
 
+// Hero video music toggle (browsers block autoplay with sound)
+(function () {
+    const video = document.getElementById('heroVideo');
+    const btn = document.getElementById('heroSoundBtn');
+    if (!video || !btn) return;
+
+    const icon = btn.querySelector('i');
+    const label = btn.querySelector('span');
+
+    function setUnmuted(on) {
+        video.muted = !on;
+        video.volume = 1;
+        btn.classList.toggle('is-unmuted', on);
+        btn.setAttribute('aria-label', on ? 'Mute hero video music' : 'Unmute hero video music');
+        if (icon) icon.className = on ? 'fas fa-volume-up' : 'fas fa-volume-mute';
+        if (label) label.textContent = on ? 'Music On' : 'Tap for Music';
+        if (on) {
+            const playPromise = video.play();
+            if (playPromise && typeof playPromise.catch === 'function') {
+                playPromise.catch(function () {});
+            }
+        }
+    }
+
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        setUnmuted(video.muted);
+    });
+})();
+
 // Mobile menu toggle
 const mobileMenu = document.querySelector('.mobile-menu');
 const navUl = document.querySelector('nav ul');
